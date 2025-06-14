@@ -1,0 +1,35 @@
+from selenium.webdriver.common.by import By
+
+
+class AuthCheckingLocators:
+    LOGIN_AND_REGISTRATION_BUTTON = (By.XPATH, './/button[text()="Вход и регистрация"]')
+    EMAIL_INPUT = (By.NAME, 'email')
+    PASSWORD_INPUT = (By.NAME, 'password')
+    SUBMIT_PASSWORD_INPUT = (By.NAME, 'submitPassword')
+    LOGIN_BUTTON = (By.XPATH, './/button[text()="Войти"]')
+    NO_ACCOUNT_BUTTON = (By.XPATH, './/button[text()="Нет аккаунта"]')
+    CREATE_ACCOUNT_BUTTON = (By.XPATH, './/button[text()="Создать аккаунт"]')
+    ERROR_MESSAGE = (By.XPATH, './/span[text()="Ошибка"]')
+    EMAIL_INPUT_ERR = (By.XPATH, './/form[@class="popUp_shell__LuyqR"]//div[@class="input_inputError__fLUP9"]/input[@name="email"]')
+    PASSWORD_INPUT_ERR = (By.XPATH, './/form[@class="popUp_shell__LuyqR"]//div[@class="input_inputError__fLUP9"]/input[@name="password"]')
+    SUBMIT_PASSWORD_INPUT_ERR = (By.XPATH, './/form[@class="popUp_shell__LuyqR"]//div[@class="input_inputError__fLUP9"]/input[@name="submitPassword"]')
+    USER_AVATAR = (By.CLASS_NAME, 'circleSmall')
+    USER_NAME = (By.CSS_SELECTOR, '.profileText.name')
+    LOGOUT_BUTTON = (By.XPATH, './/button[text()="Выйти"]')
+
+class AdvertCheckingLocators:
+    PLACE_ADVERT_BUTTON = (By.XPATH, './/button[text()="Разместить объявление"]')
+    UNAUTHORIZED_USER_HEADER_IN_ADV_FORM = (By.XPATH, './/form//h1[text()="Чтобы разместить объявление, авторизуйтесь"]')
+    NAME_INPUT = (By.NAME, 'name')
+    DESCRIPTION_INPUT = (By.XPATH, './/textarea[@placeholder="Описание товара"]')
+    PRICE_INPUT = (By.NAME, 'price')
+    CATEGORY_DROPDOWN = (By.XPATH, './/input[@name="category"]/following-sibling::button')
+    CITY_DROPDOWN = (By.XPATH, './/input[@name="city"]/following-sibling::button')
+    CATEGORY_ITEM = (By.XPATH, './/span[text()="Садоводство"]')
+    CITY_ITEM = (By.XPATH, './/span[text()="Екатеринбург"]')
+    CONDITION_RADIO_BUTTON = (By.XPATH, './/div[@class="radioUnput_inputRegular__FbVbr"]')
+    PUBLISH_BUTTON = (By.XPATH, './/button[text()="Опубликовать"]')
+    CARD = (By.XPATH, './/div[@class="card"]')
+    NEW_AD_CARD_NAME = (By.XPATH, './/div[@class="card"][last()]//h2')
+    SEARCH_TEXT_INPUT = (By.XPATH, './/input[@placeholder="Я хочу купить..."]')
+    SEARCH_BUTTON = (By.XPATH, './/button[text()="Применить"]')
